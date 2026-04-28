@@ -16,7 +16,13 @@ CLASS zcl_prueba_arr IMPLEMENTATION.
 
   METHOD if_oo_adt_classrun~main.
 
- DATA LV_ELEMENTOD TYPE zde_elemento_arr.
+" hola mundo segundo commit.
+
+data lv_mundo type string VALUE 'mi segundo commit'.
+
+
+
+
 
 
   ENDMETHOD.
