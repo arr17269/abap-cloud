@@ -63,7 +63,7 @@ CLASS zcl_tablas_arr IMPLEMENTATION.
  ls_cliente-telefono = '+34958265471'.
  ls_cliente-email = 'toniar1969@gmail.com'.
 
- insert ls_cliente into lt_cliente index 2.
+ insert ls_cliente into lt_cliente index 3.
 "out->write( lt_cliente ) .
 
 
