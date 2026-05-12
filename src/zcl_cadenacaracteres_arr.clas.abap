@@ -54,6 +54,7 @@ CLASS zcl_cadenacaracteres_arr IMPLEMENTATION.
 lv_num  = find_any_not_of( val = lv_var sub = 'is' ). "devuelve todo lo que no sea is.
 
         out->write( lv_num ).
+        data(lv_ejemplo) = 'ejemplo'.
 
 
 
