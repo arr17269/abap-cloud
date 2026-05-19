@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_bucle_arr2 IMPLEMENTATION.
+CLASS ZCL_BUCLE_ARR2 IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.

@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_dominio_arr IMPLEMENTATION.
+CLASS ZCL_DOMINIO_ARR IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.

@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_estruccturas_arr IMPLEMENTATION.
+CLASS ZCL_ESTRUCCTURAS_ARR IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.
@@ -79,21 +79,4 @@ End of ls_empleado.
 
 
   ENDMETHOD.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ENDCLASS.

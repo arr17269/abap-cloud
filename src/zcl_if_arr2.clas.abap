@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_if_arr2 IMPLEMENTATION.
+CLASS ZCL_IF_ARR2 IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.

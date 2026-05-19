@@ -3,9 +3,9 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>ZC_TIPOS_ARR</CLSNAME>
+    <CLSNAME>ZCL_TABLAS2_ARR2</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>TIPOS</DESCRIPT>
+    <DESCRIPT>SELECT</DESCRIPT>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>

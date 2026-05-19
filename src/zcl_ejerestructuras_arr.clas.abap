@@ -12,7 +12,9 @@ ENDCLASS.
 
 
 
-CLASS zcl_ejerestructuras_arr IMPLEMENTATION.
+CLASS ZCL_EJERESTRUCTURAS_ARR IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
   types: BEGIN OF ty_flights,
@@ -50,5 +52,4 @@ CLASS zcl_ejerestructuras_arr IMPLEMENTATION.
 
 
   ENDMETHOD.
-
 ENDCLASS.

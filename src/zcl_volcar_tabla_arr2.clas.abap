@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_volcar_tabla_arr2 IMPLEMENTATION.
+CLASS ZCL_VOLCAR_TABLA_ARR2 IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.
