@@ -18,6 +18,16 @@ CLASS zcl_ej_do_arr IMPLEMENTATION.
   METHOD if_oo_adt_classrun~main.
 
 
+  data lv_random type i.
+  data lv_edad type i VALUE 0.
+  data lv_nombre type string VALUE 'Daniel'.
+  data lv_pelo type string VALUE 'moreno'.
+
+  lv_random = cl_abap_random_int=>create( seed = cl_abap_random=>seed( )
+                                                       min = 1
+                                                       max = 15 )->get_next( ).
+
+
   data lv_num type i value 0.
 
 

@@ -3,9 +3,9 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <VSEOCLASS>
-    <CLSNAME>ZCL_POO_ARR</CLSNAME>
+    <CLSNAME>ZCL_FABRICA_ARR</CLSNAME>
     <LANGU>E</LANGU>
-    <DESCRIPT>POO_objetos</DESCRIPT>
+    <DESCRIPT>fabricapoo</DESCRIPT>
     <STATE>1</STATE>
     <CLSCCINCL>X</CLSCCINCL>
     <FIXPT>X</FIXPT>
