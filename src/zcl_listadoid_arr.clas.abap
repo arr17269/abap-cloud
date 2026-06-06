@@ -28,7 +28,7 @@ CLASS zcl_listadoid_arr IMPLEMENTATION.
 
     DATA ls_alumnos TYPE ty_alumnos.
     DATA lt_alumnos TYPE table of ty_alumnos.
-    DATA lv_id TYPE n LENGTH 4.
+    DATA lv_id type i.
 
     lt_alumnos = VALUE #(
 

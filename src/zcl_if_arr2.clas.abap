@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS ZCL_IF_ARR2 IMPLEMENTATION.
+CLASS zcl_if_arr2 IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.
@@ -25,6 +25,10 @@ CLASS ZCL_IF_ARR2 IMPLEMENTATION.
      endif.
 
             out->write( 'el programa ha terminado' ).
+
+
+
+
 
 
 

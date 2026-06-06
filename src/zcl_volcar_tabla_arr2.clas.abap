@@ -29,16 +29,18 @@ CLASS ZCL_VOLCAR_TABLA_ARR2 IMPLEMENTATION.
    data lt_aeropuerto TYPE TABLE of ty_aeropuerto.
    DATA ls_aeropuerto type ty_aeropuerto.
 
+
         ls_aeropuerto-id = 0.
         ls_aeropuerto-aeropuerto_id = 'NY'.
         ls_aeropuerto-name = 'New York'.
         ls_aeropuerto-city = 'New York'.
         ls_aeropuerto-country = 'EEUU'.
 
+APPEND ls_aeropuerto to lt_aeropuerto.      "le decimos inserta la estructura en la tabla.
 
 
-    insert value #( ID = 1 aeropuerto_id = 'HK' name = 'Hong kong' city = 'Kowloon' country = 'Hong kong' ) into table lt_aeropuerto.
-    insert value #( ID = 2 aeropuerto_id = 'NY' name = 'New York' city = 'New York' country = 'EEUU' ) into table lt_aeropuerto.
+    insert value #( ID = 2 aeropuerto_id = 'HK' name = 'Hong kong' city = 'Kowloon' country = 'Hong kong' ) into table lt_aeropuerto.
+    insert value #( ID = 3 aeropuerto_id = 'NY' name = 'New York' city = 'New York' country = 'EEUU' ) into table lt_aeropuerto.
         out->write( lt_aeropuerto ).
 
 
