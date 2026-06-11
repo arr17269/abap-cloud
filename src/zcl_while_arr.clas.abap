@@ -19,7 +19,7 @@ CLASS ZCL_WHILE_ARR IMPLEMENTATION.
 
 DATA lv_num type i value 5.
 
-
+data lv_domi type ZDE_DIRECCION_ARR value 'holaa'.
     while lv_num <= 10.
 
      "lv_num = lv_num + 1. La linea de abajo hace lo mismo que esta
