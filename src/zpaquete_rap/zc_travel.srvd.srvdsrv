@@ -1,0 +1,4 @@
+@EndUserText.label: 'Servicio de Viajes'
+define service ZC_TRAVEL {
+  expose ZI_TRAVEL as Travel;
+}

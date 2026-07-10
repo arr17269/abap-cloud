@@ -1,0 +1,11 @@
+@EndUserText.label: 'Consulta de departamento (control de acceso)'
+@MappingRole: true
+define role ZARR_C_DEPARTMENT_AUT {
+    grant
+        select
+            on
+                ZARR_C_DEPARTMENT_AUT
+                    where
+                        inheriting conditions from entity ZARR_R_DEPARTMENT_AUT;
+                        
+}

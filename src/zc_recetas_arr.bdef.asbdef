@@ -1,0 +1,20 @@
+projection implementation in class ZBP_C_RECETAS_ARR unique;
+strict ( 1 );
+extensible;
+use draft;
+use side effects;
+define behavior for ZC_RECETAS_ARR alias ZrRecetasArr
+extensible
+use etag
+{
+  use create;
+  use update;
+  use delete;
+
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Resume;
+  use action Prepare;
+
+}

@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_RECETAS2_ARR'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_RECETAS2_ARR'
+  }
+}
+define service ZUI_RECETAS2_ARR_O4 provider contracts odata_v4_ui {
+  expose ZC_RECETAS2_ARR;
+}

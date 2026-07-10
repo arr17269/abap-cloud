@@ -1,0 +1,54 @@
+managed implementation in class zbp_r_recetas_arr unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZR_RECETAS_ARR alias ZrRecetasArr
+persistent table ZRECETAS_ARR
+extensible
+draft table ZRECETAS_ARR_D
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master ( global )
+{
+  create;
+  update;
+  delete;
+
+
+
+  field ( readonly : update ) RecetaId;
+  field ( readonly )
+  Publicada,
+  Categoria,
+  CreatedBy,
+  CreatedAt,
+  LastChangedBy,
+  LastChangedAt,
+  LocalLastChangedAt;
+
+
+  validation validateTiempo on save { create; update; }
+  determination setInitialCategoria on save { create; }
+
+  draft action Edit;
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Resume;
+  draft determine action Prepare { validation validateTiempo; }
+  mapping for ZRECETAS_ARR corresponding extensible
+  {
+    RecetaID = RECETA_ID;
+    NombreReceta = NOMBRE_RECETA;
+    Categoria = CATEGORIA;
+    TiempoPrep = TIEMPO_PREP;
+    Dificultad = DIFICULTAD;
+    Calorias = CALORIAS;
+    Publicada = PUBLICADA;
+    Descripcion = DESCRIPCION;
+    CreatedBy = CREATED_BY;
+    CreatedAt = CREATED_AT;
+    LastChangedBy = LAST_CHANGED_BY;
+    LastChangedAt = LAST_CHANGED_AT;
+    LocalLastChangedAt = LOCAL_LAST_CHANGED_AT;
+  }
+}

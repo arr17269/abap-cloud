@@ -1,0 +1,26 @@
+managed implementation in class zbp_i_travel unique;
+strict ( 2 );
+with draft;
+
+define behavior for ZI_TRAVEL
+persistent table ztravel
+draft table ztravel_d
+lock master
+total etag LocalLastChangedAt
+authorization master ( global )
+
+{
+
+field ( readonly : update ) IdViaje;
+  create;
+  update;
+  delete;
+
+  draft action Edit;
+  draft action Activate;
+  draft action Discard;
+  draft action Resume;
+
+  draft determine action Prepare;
+
+}

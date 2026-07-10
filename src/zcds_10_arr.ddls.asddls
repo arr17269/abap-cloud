@@ -8,21 +8,7 @@ define view entity ZCDS_10_ARR
 
  key telefono as Telefono,
  
- concat(
-    concat(
-        concat(
-            concat(
-                substring( telefono, 1, 2 ), ' '
-            ),
-            substring( telefono, 3, 2 )
-        ),
-        ' '
-    ),
-    concat(
-        substring( telefono, 5, 2 ), 
-        concat( ' ', substring( telefono, 7, 2 ) )
-    )
-) as telefono_formateado,
+
   
   case nombre
     when 'antonis' then 'alumn@ Antonia'

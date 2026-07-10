@@ -4,7 +4,7 @@
 @Metadata.ignorePropagatedAnnotations: true
 define view entity ZI_CDS_13_arr
   with parameters
-
+    pCountryCode : land1,
     pCity : /dmo/city
   as select from /dmo/agency
 {
@@ -25,4 +25,4 @@ define view entity ZI_CDS_13_arr
 }
 
 where
-  city = $parameters.pCity;
+  city = $parameters.pCity and country_code = $parameters.pCountryCode;

@@ -1,0 +1,41 @@
+@Metadata.layer: #CUSTOMER
+
+@UI: {
+  headerInfo: {
+    typeName: 'Viaje',
+    typeNamePlural: 'Viajes',
+    title: { type: #STANDARD, value: 'IdViaje' }
+  }
+}
+
+annotate view ZI_TRAVEL with
+{
+  @UI.facet: [ { id:            'Viaje',
+                 purpose:       #STANDARD,
+                 type:          #IDENTIFICATION_REFERENCE,
+                 label:         'Detalles del Viaje',
+                 position:      10 } ]
+
+  @UI: { lineItem:       [ { position: 10, label: 'ID Viaje' } ],
+         identification: [ { position: 10, label: 'ID Viaje' } ],
+         selectionField: [ { position: 10 } ] }
+  IdViaje;
+
+  @UI: { lineItem:       [ { position: 20, label: 'Descripción' } ],
+         identification: [ { position: 20, label: 'Descripción' } ],
+         selectionField: [ { position: 20 } ] }
+  Description;
+
+  @UI: { lineItem:       [ { position: 30, label: 'Agencia' } ],
+         identification: [ { position: 30, label: 'Agencia' } ],
+         selectionField: [ { position: 30 } ] }
+  Agency;
+
+  @UI: { lineItem:       [ { position: 40, label: 'Estado' } ],
+         identification: [ { position: 40, label: 'Estado' } ] }  
+         
+  StatusTravel;
+  
+  @UI.hidden: true
+  LocalLastChangedAt;
+}

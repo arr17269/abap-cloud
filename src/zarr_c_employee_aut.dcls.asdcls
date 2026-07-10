@@ -1,0 +1,11 @@
+@EndUserText.label: 'Consulta de empleado (control de acceso)'
+@MappingRole: true
+define role ZARR_C_EMPLOYEE_AUT {
+    grant
+        select
+            on
+                ZARR_C_EMPLOYEE_AUT
+                    where
+                        inheriting conditions from entity ZARR_R_EMPLOYEE_AUT;
+                        
+}
